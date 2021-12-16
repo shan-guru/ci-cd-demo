@@ -28,7 +28,8 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - sls deploy -v -s $ENV_NAME
+      - sls deploy
+      #-v -s $ENV_NAME
       # - mvn install
     finally:
       - echo This always runs even if the install command fails
